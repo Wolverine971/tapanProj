@@ -1,0 +1,78 @@
+
+.prim {
+  color: $color-primary;
+  font-family: $font-primary;
+}
+.sec {
+  color: $color-secondary;
+  font-family: $font-secondary;
+}
+
+//text
+#app.application { //primary font
+  color: $color-primary;
+  font-family: $font-primary;
+  font-size: 14px;
+}
+
+.font-sec {
+  color: $color-secondary-6;
+}
+
+//default h tag
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 24px;
+  &[heading] {
+    border-bottom: 1px solid $color-blue
+  }
+}
+h3 {
+  font-size: 20px;
+  &[heading] {
+    border-bottom: 1px solid $color-blue
+  }
+}
+h1,h2,h3,h4 {
+  @extend .bold;
+  padding-bottom: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bold {
+  font-weight: $font-weight-sec;
+  font-family: $font-secondary;
+}
+
+
+//default A tag
+a {
+  //state-default
+  text-decoration: none;
+  color: $color-teal !important;
+  background-color: transparent;
+  border-color: transparent;
+
+  &[capitalize] {
+    text-transform: capitalize;
+  }
+
+  //other-states
+  &:hover {
+    color: $color-teal-hover !important;
+    text-decoration-line: underline;
+  }
+  &:disabled {
+    color: $color-text-grey-inactive !important;
+  }
+}
+
+// Glossary Term
+.glossary-term {
+  font-weight: bold;
+  text-decoration: underline dotted;
+}

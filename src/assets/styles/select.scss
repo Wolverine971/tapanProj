@@ -1,0 +1,164 @@
+
+@import 'variables';
+
+$color-select-border: $color-secondary-light;
+
+.selectdiv {
+  position: relative;
+}
+
+.selectdiv:after {
+  content: '\F078';
+  font: normal normal normal 17px/1 FontAwesome;
+  color: $color-teal;
+  right: 14px;
+  top: 14px;
+  height: 29px;
+  padding: 5px 0px 0px 8px;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}
+
+.selectdiv select {
+  @include appearance(none);
+
+  /* Add some styling */
+  display: block;
+  height: 31px !important;
+  width: 200px;
+  max-width: 320px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $color-blue;
+  background: $color-white none;
+  border: 1px solid $color-select-border;
+  @include word-break(normal);
+}
+
+.selectdiv-underline:after {
+  content: '\F078';
+  font: normal normal normal 14px/1 FontAwesome;
+  color: $color-teal;
+  right: 0px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.selectdiv-underline select {
+  @include appearance(none);
+  padding-right: 20px;
+  float: right;
+  width: 100%;
+  border-bottom: 1px solid $color-select-border;
+  @include word-break(normal);
+}
+
+/***************** Vuetify v-select ************/
+
+/* for v-select's options menu - overriding vuetify */
+.v-select-list .v-list__tile {
+  height: 25px !important;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.v-list__tile {
+  color: $color-secondary !important;
+}
+.v-text-field[role="combobox"] {
+  .v-input__slot {
+    border-radius: $border-radius;
+    border: 1px solid $color-select-border !important;
+  }
+}
+
+/* thin style regular v-select */
+.v-select-thin {
+  .v-select {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .v-label {
+    top: 2px;
+  }
+  .v-text-field .v-input__slot {
+    border-radius: $border-radius;
+    border: 1px solid $color-select-border !important;
+    height: 30px;
+  }
+  div.v-select__selection.v-select__selection--comma {
+    margin-left: 5px;
+  }
+  .v-text-field .v-input__slot:after, 
+  .v-text-field .v-input__slot:before {
+    display: none;
+  }
+  .v-messages {
+    display: none;
+  }
+  .v-icon {
+    color: $color-teal;
+  }
+}
+
+/* thin style underlined select */
+.v-select-underline-thin {
+  .v-select {
+    margin: 0;
+    font-size: 12px;
+  }
+  .v-input input {
+    max-height: 18px;
+  }
+  .v-text-field .v-input__slot,
+  .v-select div :hover {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .v-text-field .v-input__slot {
+    border-bottom: 1px solid $color-select-border !important;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+  }
+  .v-select__selections {
+    // font-family: $font-primary;
+    color: $color-secondary;
+    height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .v-text-field .v-input__slot:after, 
+  .v-text-field .v-input__slot:before {
+    display: none;
+  }
+  .v-messages {
+    display: none;
+  }
+  .v-icon {
+    color: $color-teal;
+    max-width: 15px;
+  }
+}
+
+/* select element wrapper styled with underline */
+.selectdiv-underline  {
+  position: relative;
+}
+.v-list__tile__content {
+  font-size: $font-size-body;
+}
+.v-list__tile--link{
+  text-decoration: none !important;
+}

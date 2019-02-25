@@ -1,0 +1,43 @@
+@import 'buttons/buttons';
+@import 'expansion-panel';
+@import './bottom-sheets';
+@import './select';
+@import './text';
+@import 'layout';
+@import 'input';
+@import 'checkbox';
+@import 'tabs';
+@import 'breadcrumbs';
+
+//animations
+@import '../animations/heightEC/heightEC.scss';
+
+html {
+  overflow: hidden;
+}
+
+#app {
+  background-color: $color-white;
+
+  body .nav {
+    color: $color-primary-9;
+    font: $font-secondary;
+  }
+}
+
+.nogrow {
+  flex: 0 0 initial
+}
+
+body {
+  color: $color-primary;
+  font-family: $font-primary;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+

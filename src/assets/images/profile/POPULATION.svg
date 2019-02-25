@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/Support/People/Blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="*Styles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Iconography" transform="translate(-249.000000, -228.000000)" stroke="#112E51">
+            <g id="Icon/Support/People/Blue" transform="translate(250.000000, 229.000000)">
+                <g id="People">
+                    <circle id="Oval" cx="24" cy="3" r="3"></circle>
+                    <path d="M21,19 L21,25.5 C21,26.3284271 21.6715729,27 22.5,27 L25.5,27 C26.3284271,27 27,26.3284271 27,25.5 L27,19 L28.5,19 C29.3284271,19 30,18.3284271 30,17.5 L30,10.5 C30,9.67157288 29.3284271,9 28.5,9 L19.5,9 C18.6715729,9 18,9.67157288 18,10.5 L18,11" id="Shape"></path>
+                    <circle id="Oval" cx="6" cy="3" r="3"></circle>
+                    <path d="M12,10.5 C12,9.67157288 11.3284271,9 10.5,9 L1.5,9 C0.671572875,9 2.22044605e-16,9.67157288 0,10.5 L0,17.5 C2.22044605e-16,18.3284271 0.671572875,19 1.5,19 L3,19 L3,25.5 C3,26.3284271 3.67157288,27 4.5,27 L7.5,27 C8.32842712,27 9,26.3284271 9,25.5 L9,19" id="Shape"></path>
+                    <circle id="Oval" cx="15" cy="5" r="3"></circle>
+                    <path d="M19.5,11 L10.5,11 C9.67157288,11 9,11.6715729 9,12.5 L9,19.5 C9,20.3284271 9.67157288,21 10.5,21 L12,21 L12,27.5 C12,28.3284271 12.6715729,29 13.5,29 L16.5,29 C17.3284271,29 18,28.3284271 18,27.5 L18,21 L19.5,21 C20.3284271,21 21,20.3284271 21,19.5 L21,12.5 C21,11.6715729 20.3284271,11 19.5,11 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

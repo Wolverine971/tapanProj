@@ -1,0 +1,24 @@
+
+
+.v-btn.ter {
+  //state-default
+  color: $color-teal;
+  background-color: $color-white !important;
+  border-color: $color-white;
+
+  //other-states
+  &:hover {
+    color: $color-teal-hover;
+    text-decoration-line: underline;
+    border-color: $color-white;
+  }
+  &:disabled,
+  &.v-btn--disabled,
+  &.v-btn--disabled:disabled,
+  &.v-btn--disabled:not(.v-btn--icon):not(.v-btn--flat):disabled
+  {
+    color: $color-text-grey-inactive !important;
+    border-color: $color-white;
+    background-color: $color-white !important;
+  }
+}

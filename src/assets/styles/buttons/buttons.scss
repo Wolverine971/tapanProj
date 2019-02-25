@@ -1,0 +1,79 @@
+@import 'buttons-sec';
+@import 'buttons-ter';
+
+//state-default
+.v-btn,
+.v-btn.pri {
+  font-weight: $font-weight-sec;
+  color: $color-white; //defaults to primary colors
+  background-color: $color-teal;
+  border-radius: $border-radius;
+  border: 1px solid $color-teal;
+  margin: 0px;
+  box-shadow: none !important;
+  text-transform: capitalize;
+  line-height: 0.9;
+
+  //allow first child to be centered
+  > *:first-child {
+    height: auto;
+    width: auto;
+  };
+}
+.theme--light .v-btn:not(.v-btn--icon):not(.v-btn--flat).pri {
+  background-color: $color-teal;
+}
+.theme--light .v-btn.pri {
+  color: $color-white;
+}
+
+
+//---sizing
+.v-btn.square {
+  &.sharp-left {
+    border: 1px solid transparent;
+    border-left: 1px solid $color-teal;
+  }
+  &.large {
+    height: 75px;
+    width: 75px;
+    .v-icon {
+      font-size: 45px !important;
+    }
+  }
+  &.no-border {
+    border: none;
+  }
+}
+.v-btn.large {
+  padding: 10px;
+}
+.v-btn.small {
+  padding: 5px;
+}
+
+
+
+//other-states
+//defaults
+.v-btn {
+  &::before {
+    background-color: inherit !important;
+  }
+  &:hover {
+    background-color: $color-teal-hover;
+    border-color: $color-teal-hover;
+  }
+  &:active {
+    background-color: $color-teal-focus;
+    border-color: $color-teal-focus;
+  }
+  &:disabled {
+    color: $color-blue-inactive;
+    background-color: $background-color-grey-inactive;
+    border-color: $color-text-grey-inactive;
+  }
+  &:focus {
+    outline: 1px dotted $color-focus-ring !important;
+  }
+}

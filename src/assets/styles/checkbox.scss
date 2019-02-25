@@ -1,0 +1,32 @@
+
+// Checkbox and radio button color
+.v-input--selection-controls__input > .v-input--selection-controls__ripple.accent--text,
+.v-input--selection-controls__input .v-icon.accent--text {
+  color: #0697a6 !important;
+}
+
+// Checkbox label color
+.v-input--selection-controls.v-input--checkbox .v-label {
+  color: $color-primary !important;
+  font-size: $font-size-body;
+}
+.v-input--selection-controls.v-input--checkbox.v-input--is-disabled .v-label {
+  opacity: .35;
+}
+
+.v-input.v-input--checkbox {
+  margin: 0;
+  padding: 0;
+  .v-messages {
+    display: none;
+  }
+}
+
+// Radio button label color
+.v-radio .v-label {
+  color: $color-primary !important;
+  font-size: $font-size-body;
+}
+.v-radio.v-radio--is-disabled .v-label {
+  opacity: .35;
+}

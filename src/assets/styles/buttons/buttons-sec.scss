@@ -1,0 +1,23 @@
+
+
+//state-default
+.v-btn.sec {
+  color: $color-teal;
+  background-color: $color-white !important;
+}
+
+
+//other-states
+.v-btn.sec:hover {
+  color: $color-teal-hover;
+  border-color: $color-teal-hover;
+}
+.v-btn.sec:active {
+  color: $color-teal-focus;
+  border-color: $color-teal-focus;
+}
+.v-btn.sec:disabled {
+  color: $color-blue-inactive;
+  border-color: transparent;
+  background-color: $background-color-grey-inactive !important;
+}

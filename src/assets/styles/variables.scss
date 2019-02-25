@@ -1,0 +1,98 @@
+/*
+  --------------------------------------------------------
+  SASS entities ONLY in this file. No CSS or other styles.
+  --------------------------------------------------------
+*/
+
+//
+// Breakpoints
+//
+$breakpoint-mobile: 600px; // TBD
+$breakpoint-mobile-plus-one: 601px; // TBD
+$breakpoint-mobile-with-sidepanel: 950px; // TBD
+
+//
+// Page padding
+//
+$page-padding-desktop: 40px;
+$page-padding-mobile: 10px;
+
+//
+// Colors
+//
+$color-primary: #112E51;
+$color-primary-1: #284262;
+$color-primary-2: #405773;
+$color-primary-9: #E7EAED;
+$color-secondary: #4B636E;
+$color-secondary-6: #b7c0c5;
+$color-secondary-8: #dbdfe2;
+$color-secondary-9: #edeff0;
+$color-secondary-light: #78909C;
+$color-secondary-light-8: #e4e8eb;
+$color-secondary-light-9: #f1f3f5;
+
+$color-orange: #FF5D2A;
+$color-teal: #008392;
+$color-light-teal: #83cad3;
+
+$color-background: #f1f3f5;
+
+$color-teal-hover: #0c6873;
+$color-teal-focus: #008392;
+
+$background-color-grey-inactive: #4b636e;
+$color-text-grey-inactive: #78909C;
+
+$color-blue: #112e51;
+$color-blue-inactive: #112e51;
+
+$color-white: #FFFFFF;
+
+$color-page-background: $color-white;
+
+$color-placeholder-text: #4b636e;
+
+$table-border-color: #a6b2b7;
+
+$bottom-sheet-height: 50vh;
+$max-bottom-sheet-height: calc(100vh - 200px);
+
+$color-focus-ring: #000000;
+
+//
+// Flex
+//
+$flex-6-column: 16.666666666666664%;
+$flex-4-column: 25%;
+$flex-3-column: 33.33333333333333%;
+$flex-2-column: 50%;
+$flex-1-column: 100%;
+
+//
+// Fonts
+//
+$font-primary: 'Roboto';
+$font-secondary: 'Roboto Condensed';
+$font-weight-sec: 700;
+$font-size-body: 14px;
+
+//
+// Sizes
+//
+$header-height: 64px;
+$header-height-mobile: 112px;
+$nav-bar-height: 48px;
+$toolbar-extension-height: 48px;
+$side-panel-width: 328px;
+$side-panel-results-height: 40px;
+$border-radius: 2px;
+
+//
+// Z-Index
+//
+$z-index-side-panel: 2;
+$z-index-app-blur: 4;
+$z-index-global-search-focus: 5;
+$z-index-map-legend: 1;
+$z-index-map-multi-select-tool: 1;

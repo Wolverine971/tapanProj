@@ -1,0 +1,58 @@
+
+.application.theme--light {
+
+  // Note - these styles are shared with dialogs
+
+  .v-dialog__content {
+    transition: width 0s;
+  }
+
+  .v-overlay {
+    transition: width 0s;
+  }
+
+  // Adjust the left side of the bottom sheet and the overlay
+  // so that the bottom sheets appear in the "content" area
+  // of the application. Since these styles are shared with
+  // dialogs, only apply these styles if there is an active
+  // bottom sheet.
+  &.has-sidepanel.has-bottomsheet {
+
+    @media screen and (min-width: $breakpoint-mobile-plus-one) {
+      .v-dialog__content {
+        left: $side-panel-width;
+        width: calc(100vw - #{$side-panel-width});
+
+        > .v-dialog {
+          box-shadow: none;
+        }
+      }
+
+      .v-overlay {
+        top: $header-height;
+        left: $side-panel-width;
+      }
+    }    
+  }  
+}
+
+// Common styles for the content of bottom sheets
+
+.bottom-sheet-nav-tabs {
+  width: 100%;
+}
+
+.bottom-sheet-nav-item {
+  color: $color-primary !important;
+  font-weight: bold
+}
+
+.bottom-sheet-tab-area {
+  width: 100%;
+  padding: 20px;
+  border-top: 2px solid $color-secondary-light;
+}
+
+.bottom-sheet-section-label {
+  font-weight: bold;
+}

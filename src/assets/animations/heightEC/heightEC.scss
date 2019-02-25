@@ -1,0 +1,17 @@
+
+
+.drawer-parent {
+  position: relative;
+  overflow: hidden;
+  transition: height 0.5s linear 0.2s;
+  > *:first-child {
+    width: 100%;
+    position: absolute;
+  }
+  &.expanded {
+    height: auto;
+  }
+  &.collapsed {
+    height: 0px;
+  }
+}

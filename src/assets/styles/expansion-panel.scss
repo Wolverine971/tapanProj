@@ -1,0 +1,9 @@
+
+
+.v-expansion-panel {
+  border: 1px solid $color-secondary-light;
+  box-shadow: none;
+  > *:first-child {
+    background-color: $color-background;
+  }
+}

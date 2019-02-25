@@ -1,0 +1,40 @@
+.v-text-field {
+
+  &.v-text-field--solo {
+    .v-input__slot {
+      border: 1px solid #535556 !important;
+      border-radius: $border-radius;
+
+      &:hover {
+        border: 1px solid #007e85 !important;
+      }
+
+      &:focus {
+        /*
+          We can't style the border on focus
+          because the child input element is
+          the actual item that takes focus,
+          but the parent has the border style.
+        */
+        border: 1px solid #007e85 !important;
+      }
+    }
+  }
+
+  //centers input text in the box
+  .v-text-field__slot {
+    align-self: center;
+  }
+
+  .v-label {
+    color: #4b636e !important;
+  }
+
+  input {
+    color: $color-primary !important;
+    margin-top: 0 !important;
+  }
+
+  @include input-placeholder-color($color-placeholder-text);
+  
+}

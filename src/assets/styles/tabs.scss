@@ -1,0 +1,7 @@
+.v-tabs__item {
+  color: $color-primary !important;
+
+  &.v-tabs__item--disabled {
+    opacity: .25;
+  }
+}

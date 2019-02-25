@@ -1,0 +1,80 @@
+/*
+  --------------------------------------------------------
+  SASS entities ONLY in this file. No CSS or other styles.
+  --------------------------------------------------------
+*/
+
+@mixin box-shadow($h-offset, $v-offset, $blur, $spread, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $h-offset $v-offset $blur $spread $color;
+    -moz-box-shadow: inset $h-offset $v-offset $blur $spread $color;
+    -o-box-shadow: inset $h-offset $v-offset $blur $spread $color;
+    box-shadow: inset $h-offset $v-offset $blur $spread $color;
+  } @else {
+    -webkit-box-shadow: $h-offset $v-offset $blur $spread $color;
+    -moz-box-shadow: $h-offset $v-offset $blur $spread $color;
+    -o-box-shadow: $h-offset $v-offset $blur $spread $color;
+    box-shadow: $h-offset $v-offset $blur $spread $color;
+  }
+}
+
+@mixin appearance($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  appearance: $value;
+}
+
+@mixin flex-direction($value) {
+  -webkit-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin flex-grow($value) {
+  -webkit-box-flex: $value;
+  -ms-flex-positive: $value;
+  flex-grow: $value;
+}
+
+@mixin flex-basis($value) {
+  -ms-flex-preferred-size: $value;
+  flex-basis: $value;
+}
+
+@mixin input-placeholder-color($color) {
+  ::-webkit-input-placeholder {
+    color: $color !important;
+  }
+  ::-moz-placeholder {
+    color: $color !important;
+  }
+  :-ms-input-placeholder {
+    color: $color !important;
+  }
+  :-moz-placeholder {
+    color: $color !important;
+  }  
+}
+
+@mixin word-break($value) {
+  -ms-word-break: $value;
+  word-break: $value;
+}
+
+@mixin scrollable-page($no-searchbar: false) {
+  height: calc(100vh - #{$header-height});
+  overflow-x: hidden;
+  overflow-y: auto;
+  @if $no-searchbar {
+  } @else {
+    @media screen and (max-width: $breakpoint-mobile) {
+      height: calc(100vh - #{$header-height-mobile});
+    }
+  }
+}
+
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
