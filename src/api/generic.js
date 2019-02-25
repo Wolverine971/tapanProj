@@ -4,7 +4,7 @@
 import axios from 'axios'
 // import _ from 'underscore'
 export default {
-  server: 'http://18.144.56.185:8080',
+  server: 'http://18.144.56.185:8090',
   // process.env.VUE_APP_ROOT_API,
   
   search(text) {

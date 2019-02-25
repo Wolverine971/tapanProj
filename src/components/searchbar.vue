@@ -305,7 +305,7 @@ $searchbar-height-mobile: 48px;
   margin-top: 6px;
 }
 
-.v-input__control>.v-input__slot input{
+.searchBar.toolbar .v-input__control>.v-input__slot input{
   color: $color-white !important;
 }
 

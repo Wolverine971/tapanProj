@@ -11,7 +11,7 @@ export const state = {
     results: "",
     didyoumean: "",
     spellCheck: "",
-    synonyms: ""
+    synonym: ""
 
 }
 
@@ -28,8 +28,8 @@ export const getters = {
     getSpellCheck(state) {
         return state.spellCheck
     },
-    getSynonyms(state) {
-        return state.synonyms
+    getSynonym(state) {
+        return state.synonym
     },
 }
 
@@ -39,7 +39,7 @@ export const actions = {
             commit('setResults', response.results)
             commit('setDidYouMean', response.didyoumean)
             commit('setSpellCheck', response.spellCheck)
-            commit('setSynonyms', response.synonyms)
+            commit('setSynonym', response.synonym)
           
   
           })
@@ -60,8 +60,8 @@ export const mutations = {
     setSpellCheck(state, value) {
     state.spellCheck = value
     },
-    setSynonyms(state, value) {
-    state.synonyms = value
+    setSynonym(state, value) {
+    state.synonym = value
     },
 }
 
